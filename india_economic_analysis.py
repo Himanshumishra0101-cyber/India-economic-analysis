@@ -112,6 +112,9 @@ axes[2, 2].set_xlabel('gdp growth percentage')
 axes[2, 2].set_ylabel('service (% GDP)')
 axes[2, 2].grid(True, alpha=0.3)
 
+axes[2,0].remove()
+axes[2,1].remove()
+
 #correlation analysis of gdp with industry agr serv
 correlations = {
     'Agriculture': india_df['agriculture value added(%GDP)'].corr(india_df['GDP_growth_percent']),
